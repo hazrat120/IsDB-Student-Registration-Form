@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IsDB Student Registration Form</title>
+  </head>
+  <body>
+    <!-- Image maping -->
+    <div class="isdb">
+      <img src="/img/isdb-img.jpeg" alt="IsDB image" usemap="#image-map" />
+      <map name="image-map">
+        <area
+          shape="rect"
+          coords="32,24,147,96"
+          href="https://apply.isdb-bisew.info/"
+          alt="IsDB"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="225,342,387,362"
+          href="https://www.isdb-bisew.org/"
+          alt="idsb_website"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="227,364,522,382"
+          href="https://www.facebook.com/IsDBBISEWSCHOLARSHIP"
+          alt="isdb_facebook"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="576,343,702,362"
+          href="tel:+88029183006"
+          alt="call isdb"
+        />
+      </map>
+    </div>
+
+    <!-- Form Start -->
+    <form action="index.php" method="post">
+      <h1>Registration Form</h1>
+      <div class="name">
+        <div class="fname">
+          <label for="fname">First Name <sup>*</sup> </label>
+          <input type="text" name="fname" required />
+        </div>
+
+        <div class="lname">
+          <label for="lname">Last Name <sup>*</sup></label>
+          <input type="text" name="lname" required />
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Email <sup>*</sup></label>
+        <input type="text" name="email" required />
+      </div>
+
+      <div class="id_round">
+        <div class="id">
+          <label for="id">ID <sup>*</sup></label>
+          <input type="text" name="id" required />
+        </div>
+
+        <div class="round">
+          <label for="round">Round <sup>*</sup></label>
+          <select class="round_sec" name="round">
+            <option value="">Select Option</option>
+            <option value="62">Round 62</option>
+            <option value="61">Round 61</option>
+            <option value="60">Round 60</option>
+            <option value="59">Round 59</option>
+            <option value="58">Round 58</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="degre">
+        <label for="degre">Education <sup>*</sup></label>
+        <div class="box">
+          <div class="box1">
+            <label for="ssc" name="ssc">SSC</label>
+            <input type="checkbox" name="degre" required />
+          </div>
+
+          <div class="box1">
+            <label for="hsc">HSC</label>
+            <input type="checkbox" name="degre" required />
+          </div>
+          <div class="box1">
+            <label for="honours">Honours</label>
+            <input type="checkbox" name="degre" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="gender">
+        <label for="gender">Gender <sup>*</sup></label>
+        <div class="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" required />
+        </div>
+        <div class="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" required />
+        </div>
+      </div>
+
+      <div class="sub_res">
+        <button class="sub" type="submit">Submit</button>
+        <button class="res" type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
