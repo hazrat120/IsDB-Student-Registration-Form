@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>IsDB Student Registration Form</title>
   </head>
   <body>
     <!-- Image maping -->
-    <div class="isdb">
+    <div id="isdb">
       <img src="/img/isdb-img.jpeg" alt="IsDB image" usemap="#image-map" />
       <map name="image-map">
         <area
@@ -38,12 +44,21 @@
           href="tel:+88029183006"
           alt="call isdb"
         />
+        <area
+          shape="rect"
+          coords="385,21,680,225"
+          href="https://apply.isdb-bisew.info/"
+          alt="idsb-scholorship"
+          target="_blank"
+        />
       </map>
     </div>
 
     <!-- Form Start -->
-    <form action="index.php" method="post">
-      <h1>Registration Form</h1>
+    <form id="form" action="index.php" method="post">
+      <h1 class="form_heading">Registration Form</h1>
+      <hr class="fom_hr" />
+
       <div class="name">
         <div class="fname">
           <label for="fname">First Name <sup>*</sup> </label>

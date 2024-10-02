@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: #f5f7fa;
+}
+
+ul,
+ol,
+a {
+  text-decoration: none;
+}
+
+/* Image mapping isdb website and etc */
+#isdb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#isdb > img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Form Style */
+#form {
+  background-color: #fff;
+  width: 750px;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+
+.form_heading {
+  color: #05a0c8;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.fom_hr {
+  border: none;
+  height: 2px;
+  background-color: hwb(0 95% 5%);
+  margin: 15px 0;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
