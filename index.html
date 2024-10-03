@@ -60,30 +60,37 @@
       <hr class="fom_hr" />
 
       <div class="name">
-        <div class="fname">
-          <label for="fname">First Name <sup>*</sup> </label>
-          <input type="text" name="fname" required />
+        <div class="nam fname">
+          <label for="fname">First Name <span>*</span></label>
+          <input class="same_inp" type="text" name="fname" required />
         </div>
 
-        <div class="lname">
-          <label for="lname">Last Name <sup>*</sup></label>
-          <input type="text" name="lname" required />
+        <div class="nam lname">
+          <label for="lname">Last Name <span>*</span></label>
+          <input class="same_inp" type="text" name="lname" required />
         </div>
       </div>
 
-      <div class="email">
-        <label for="email">Email <sup>*</sup></label>
-        <input type="text" name="email" required />
+      <div class="mail_date">
+       <div class="mail">
+        <label for="email">Email <span>*</span></label>
+        <input class="same_inp mail_in" type="text" name="email" required />
+       </div>
+
+       <div class="date">
+        <label for="date of birth">Date of Birth <span>*</span></label>
+        <input class="same_inp" type="date" name="date" placeholder="none">
+       </div>
       </div>
 
       <div class="id_round">
         <div class="id">
-          <label for="id">ID <sup>*</sup></label>
-          <input type="text" name="id" required />
+          <label for="id">Student ID <span>*</span></label>
+          <input class="same_inp" type="text" name="id" required />
         </div>
 
         <div class="round">
-          <label for="round">Round <sup>*</sup></label>
+          <label for="round">Round <span>*</span></label>
           <select class="round_sec" name="round">
             <option value="">Select Option</option>
             <option value="62">Round 62</option>
@@ -96,39 +103,39 @@
       </div>
 
       <div class="degre">
-        <label for="degre">Education <sup>*</sup></label>
         <div class="box">
+          <label for="degre">Education <span>*</span></label>
           <div class="box1">
-            <label for="ssc" name="ssc">SSC</label>
-            <input type="checkbox" name="degre" required />
+            <input type="checkbox" name="degre" />
+            <p for="ssc" name="ssc">SSC</p>
           </div>
 
           <div class="box1">
-            <label for="hsc">HSC</label>
-            <input type="checkbox" name="degre" required />
+            <input type="checkbox" name="degre"/>
+            <p for="hsc">HSC</p>
           </div>
           <div class="box1">
-            <label for="honours">Honours</label>
-            <input type="checkbox" name="degre" required />
+            <input type="checkbox" name="degre"/>
+            <p for="honours">Honours</p>
           </div>
         </div>
-      </div>
 
-      <div class="gender">
-        <label for="gender">Gender <sup>*</sup></label>
-        <div class="male">
-          <label for="male">Male</label>
-          <input type="radio" name="gender" required />
-        </div>
-        <div class="female">
-          <label for="female">Female</label>
-          <input type="radio" name="gender" required />
+        <div class="gender">
+          <label for="gender">Gender <span>*</span></label>
+          <div class="male">
+            <input type="radio" name="gender" required />
+            <p for="male">Male</p>
+          </div>
+          <div class="female">
+            <input type="radio" name="gender" required />
+            <p for="female">Female</p>
+          </div>
         </div>
       </div>
 
       <div class="sub_res">
-        <button class="sub" type="submit">Submit</button>
-        <button class="res" type="reset">Reset</button>
+        <button class="btn sub" type="submit">Submit</button>
+        <button class="btn res" type="reset">Reset</button>
       </div>
     </form>
   </body>
